@@ -67,3 +67,9 @@ ticket_price_index = {
         }
     }
 }
+
+age = input('Please enter Your age as a number:'/n)
+
+movie = input('Enter the name of the movie You want to see (please put your choice in ""):')
+
+time = input('Please chose a screening time (please cose from morning, afternoon or evening, please put your choice in "")')
