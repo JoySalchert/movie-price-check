@@ -1,32 +1,54 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Movie Price Check App
+A comandline program that gives users a ticket price for a movie depending on user age and screening time.
+The program also checks if a person is to young for an "R" rated movie.
 
-Welcome,
+View the live program here: 
+<hr>
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+## Features
+- input funktions for "viewer age", "" and "".
+- error messages for wrong input data.
+- ticket price calculation and display.
+- the program checks if a person is to young for an "R" rated movie.
+<hr>
 
-## Reminders
+## Design
+> Pretty much free-hand!
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+<hr>
 
-## Creating the Heroku app
+## Technologies
+- Python3
+- GitHub:<br>
+The Source code is hosted on GitHub and deployed via Heroku.
+- Git:<br>
+Used to commit and push code during the development of the website.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+<hr>
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Functional Testing
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+The program is functioning as intended.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+<hr>
 
-Connect your GitHub repository and deploy as normal.
+## Deployment
 
-## Constraints
+- The site was created using the GidPod code editor and pushed to github to the repository (movie-price-check).
+- I used the folowing comands to push the code from the GitPod Workspace to the repository:
+> git add .<br>
+> git commit -m "Message"<br>
+> git push
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+- Deployment to Heroku:<br>
+I deployed the finished website to Heroku and got the folowing live link:<br>
 
----
 
-Happy coding!
+## Credits
+- I took the HTML and CSS code for the footer from the CI-Love-Runnig-Project.
+- I took my mentors (Gareth McGirr) README.md file as the outline for my README.md file.
+- I used generel google queries when I got stuck (mostly stackoverflow).
+
+## Content and Media
+I wrote all the Phython Code.
+

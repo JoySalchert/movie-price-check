@@ -68,11 +68,27 @@ ticket_price_index = {
     }
 }
 
-# age = input('Please enter Your age as a number:')
+while True:
+    age = input('Please enter Your age as a number:\n')
+    if age.isdigit():
+        age = int(age)
+        break
+    else:
+        print('Sorry Your entry is invalid')
 
-movie = input('Enter the name of the movie You want to see (please put your choice in ""):')
+while True:
+    movie = input('Enter the name of the movie You want to see:\n')
+    if movie in ticket_price_index:
+        break
+    else:
+        print('Sorry Your entry is invalid')
 
-time = input('Please chose a screening time (please cose from morning, afternoon or evening, please put your choice in "")')
+while True:
+    time = input('Please chose a screening time (please cose from morning, afternoon or evening:\n')
+    if time in ticket_price_index[movie]['times']:
+        break
+    else:
+        print('Sorry Your entry is invalid')
 
 age_group = None
 if (age < 16):
@@ -82,9 +98,9 @@ elif (age < 60):
 else:
     age_group = 'senior'
 
-final_ticket_price = ticket_price_index[movie]['times'][time][age_group]['rating']
+rating = ticket_price_index[movie]['rating']
 if (rating == 'R' and age_group == 'child'):
     print('Sorry You have to be at least 16 years of age to see this movie')
-    break
 else:
+    final_ticket_price = ticket_price_index[movie]['times'][time][age_group]
     print(f'The ticket will cost: {final_ticket_price} Euros')
