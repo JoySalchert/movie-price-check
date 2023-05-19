@@ -21,7 +21,7 @@ ticket_price_index = {
                 'senior' : 14
             }
         }
-    }
+    },
     'Snow White and the 7 Dwars': {
         'name' : 'When Harry met Sally',
         'rating' : 'G',
@@ -43,7 +43,7 @@ ticket_price_index = {
                 'senior' : 14
             }
         }
-    }
+    },
     'Texas Chainsaw Massacre': {
         'name' : 'When Harry met Sally',
         'rating' : 'R',
@@ -68,7 +68,7 @@ ticket_price_index = {
     }
 }
 
-age = input('Please enter Your age as a number:'/n)
+# age = input('Please enter Your age as a number:')
 
 movie = input('Enter the name of the movie You want to see (please put your choice in ""):')
 
