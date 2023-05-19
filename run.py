@@ -82,3 +82,9 @@ elif (age < 60):
 else:
     age_group = 'senior'
 
+final_ticket_price = ticket_price_index[movie]['times'][time][age_group]['rating']
+if (rating == 'R' and age_group == 'child'):
+    print('Sorry You have to be at least 16 years of age to see this movie')
+    break
+else:
+    print(f'The ticket will cost: {final_ticket_price} Euros')
